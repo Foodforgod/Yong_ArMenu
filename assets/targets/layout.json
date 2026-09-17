@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "imageWidth": 800,
+  "imageHeight": 1131,
+  "dishes": [
+    {
+      "id": "dish-1",
+      "type": "salad",
+      "name": "Caprese Salad",
+      "nx": 0.487,
+      "ny": 0.241,
+      "scale": 0.3
+    },
+    {
+      "id": "dish-2",
+      "type": "pasta",
+      "name": "Spaghetti al Pesto",
+      "nx": 0.5,
+      "ny": 0.38,
+      "scale": 0.3
+    },
+    {
+      "id": "dish-3",
+      "type": "pizza",
+      "name": "Pizza Margherita",
+      "nx": 0.5,
+      "ny": 0.55,
+      "scale": 0.3
+    },
+    {
+      "id": "dish-4",
+      "type": "dessert",
+      "name": "Berry Panna Cotta",
+      "nx": 0.5,
+      "ny": 0.72,
+      "scale": 0.3
+    },
+    {
+      "id": "dish-5",
+      "type": "tiramisu",
+      "name": "Tiramisù",
+      "nx": 0.5,
+      "ny": 0.88,
+      "scale": 0.3
+    }
+  ]
+}
