@@ -24,7 +24,6 @@ An Augmented Reality (AR) web application built for restaurants, allowing custom
 
 ## 📁 Project Structure
 
-```text
 ├── assets/
 │   └── targets/
 │       ├── targets.mind      # Compiled MindAR image target file
@@ -40,17 +39,21 @@ Clone or Download the Repository into your local server environment (e.g., XAMPP
 Ensure PHP Write Permissions: Make sure the assets/targets/ directory has write permissions so the layout editor can successfully save changes to layout.json.
 
 Run the Project:
+<img width="1908" height="1083" alt="image" src="https://github.com/user-attachments/assets/7728de6a-78ae-41cd-a79f-38d0e7e6ef9a" />
 
 Open index.php in your browser to access the dashboard.
+<img width="1906" height="1135" alt="image" src="https://github.com/user-attachments/assets/3c6a4701-8752-4ba3-9fbc-7c9e2fa6ce8f" />
 
 Use editor.php to upload your own menu poster or fine-tune dish coordinates.
+<img width="1917" height="1138" alt="image" src="https://github.com/user-attachments/assets/7260a7b9-45ad-46dc-aee2-e678358c5ef3" />
 
 Open ar.php on your mobile phone or AR-compatible device to scan the menu poster.
 
 📱 How to Use
-<img width="1902" height="1077" alt="image" src="https://github.com/user-attachments/assets/13e28cc8-4cb5-446d-90cd-1c56b2d79a0d" />
-
+<img width="1906" height="987" alt="image" src="https://github.com/user-attachments/assets/d8468a94-65da-4b38-8b91-7758a8280033" />
+<img width="1887" height="980" alt="image" src="https://github.com/user-attachments/assets/ff9f95d4-b1d4-48af-a2dc-e40ccb4398e5" />
 Calibrate Layout: Go to editor.php, upload your menu poster (menu_2.jpg), and align the markers over your menu items. Click Save Layout Changes.
+<img width="1917" height="1138" alt="image" src="https://github.com/user-attachments/assets/9a761012-6e45-42b2-8912-c1dd6af003c6" />
 
 Launch AR: Open ar.php on your smartphone and grant camera permissions.
 
