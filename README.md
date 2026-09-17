@@ -24,7 +24,6 @@ An Augmented Reality (AR) web application built for restaurants, allowing custom
 
 ## 📁 Project Structure
 
-```text
 ├── assets/
 │   └── targets/
 │       ├── targets.mind      # Compiled MindAR image target file
@@ -48,6 +47,8 @@ Use editor.php to upload your own menu poster or fine-tune dish coordinates.
 Open ar.php on your mobile phone or AR-compatible device to scan the menu poster.
 
 📱 How to Use
+<img width="1906" height="987" alt="image" src="https://github.com/user-attachments/assets/d8468a94-65da-4b38-8b91-7758a8280033" />
+<img width="1887" height="980" alt="image" src="https://github.com/user-attachments/assets/ff9f95d4-b1d4-48af-a2dc-e40ccb4398e5" />
 Calibrate Layout: Go to editor.php, upload your menu poster (menu_2.jpg), and align the markers over your menu items. Click Save Layout Changes.
 
 Launch AR: Open ar.php on your smartphone and grant camera permissions.
