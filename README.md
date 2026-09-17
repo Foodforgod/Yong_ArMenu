@@ -48,6 +48,8 @@ Use editor.php to upload your own menu poster or fine-tune dish coordinates.
 Open ar.php on your mobile phone or AR-compatible device to scan the menu poster.
 
 📱 How to Use
+<img width="1902" height="1077" alt="image" src="https://github.com/user-attachments/assets/13e28cc8-4cb5-446d-90cd-1c56b2d79a0d" />
+
 Calibrate Layout: Go to editor.php, upload your menu poster (menu_2.jpg), and align the markers over your menu items. Click Save Layout Changes.
 
 Launch AR: Open ar.php on your smartphone and grant camera permissions.
