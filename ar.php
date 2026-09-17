@@ -75,7 +75,7 @@
         let activeDishType = null;
 
         // Templates for 3D Models
-       const modelTemplates = {
+        const modelTemplates = {
             salad: `
                 <a-cylinder radius="0.75" height="0.05" color="#95a5a6" position="0 0.03 0" roughness="0.3"></a-cylinder>
                 <a-torus radius="0.72" radius-tubular="0.02" color="#7f8c8d" position="0 0.06 0" rotation="90 0 0"></a-torus>
@@ -103,7 +103,7 @@
                 <a-cylinder radius="0.12" height="0.025" color="#fffaf0" position="-0.12 0.03 0.18" rotation="4 -15 0"></a-cylinder>
                 <a-box width="0.09" height="0.005" depth="0.15" color="#2e7d32" position="0.05 0.045 0.12" rotation="0 35 4"></a-box>
             `,
-       dessert: `
+            dessert: `
                 <a-cylinder radius="0.35" height="0.38" color="#ffffff" opacity="0.3" transparent="true" position="0 0.2 0" roughness="0.1"></a-cylinder>
                 <a-cylinder radius="0.32" height="0.25" color="#fffdfa" position="0 0.18 0"></a-cylinder>
                 <a-cylinder radius="0.32" height="0.06" color="#ad1457" position="0 0.32 0"></a-cylinder>
@@ -152,21 +152,19 @@
             modelsContainer.innerHTML = '';
 
             layoutData.dishes.forEach((dish, idx) => {
-                // Convert normalized 0-1 editor coordinates (nx, ny) to A-Frame AR relative plane coordinates
-                // MindAR plane is roughly 1 unit wide, centered at 0,0. Adjust scaling factors as needed.
                 const posX = (dish.nx - 0.5) * 1.0; 
                 const posY = (0.5 - dish.ny) * 1.4; 
 
                 // Build HUD button
                 const btn = document.createElement('button');
-                btn.className = `dish-btn ${idx === 2 ? 'active' : ''}`; // Default to pizza or first item
+                btn.className = `dish-btn ${idx === 2 ? 'active' : ''}`;
                 btn.innerHTML = getEmoji(dish.type) + " " + dish.name;
                 btn.onclick = () => selectDish(dish.type, btn);
                 hudBar.appendChild(btn);
 
-                // Build AR Entity positioned exactly where saved in editor.php
+                // Build AR Entity with an even slightly larger scale (0.25)
                 const entityHtml = `
-                    <a-entity class="ar-dish-model" data-type="${dish.type}" position="${posX.toFixed(3)} ${posY.toFixed(3)} 0" scale="0.15 0.15 0.15" visible="${idx === 2 ? 'true' : 'false'}" animation="property: rotation; to: 0 360 0; loop: true; dur: 16000; easing: linear">
+                    <a-entity class="ar-dish-model" data-type="${dish.type}" position="${posX.toFixed(3)} ${posY.toFixed(3)} 0" scale="0.25 0.25 0.25" visible="${idx === 2 ? 'true' : 'false'}" animation="property: rotation; to: 0 360 0; loop: true; dur: 16000; easing: linear">
                         <a-entity>
                             ${modelTemplates[dish.type] || modelTemplates['pizza']}
                         </a-entity>
